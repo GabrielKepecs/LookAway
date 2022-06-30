@@ -14,20 +14,20 @@ public class Jetpack : MonoBehaviour
 
     public void JetpackAct()
     {
-        if (curFuel > 1f)
+        if (curFuel > 0)
         {
             curFuel -= 1;
             rbd.AddForce(rbd.transform.up * thrustForce, ForceMode.Impulse);
 
         }
-        else if (Physics.Raycast(groundedTransform.position, Vector3.down, 0.05f, LayerMask.GetMask("Grounded")) && curFuel < maxFuel)
-        {
-            curFuel += 1;
-
-        }
+       // else if (Physics.Raycast(groundedTransform.position, Vector3.down, 0.05f, LayerMask.GetMask("Grounded")) && curFuel < maxFuel)
+       // {
+       //     curFuel += 1;
+       //
+       // }
         else
         {
-
+            
         }
     }
 
@@ -38,6 +38,20 @@ public class Jetpack : MonoBehaviour
     }
 
 
-    void Update() { }
+    void Update() 
+    { 
+        if(curFuel == 0)
+        {
+            StartCoroutine(Recharge());
+        }
+    
+    
+    }
+
+    IEnumerator Recharge()
+    {
+        yield return new WaitForSeconds(10);
+        curFuel = maxFuel;
+    }
    
 }
