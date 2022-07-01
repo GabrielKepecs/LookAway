@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fast_Travel : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class Fast_Travel : MonoBehaviour
     public void FastTravel()    
     {
         thePlayer.transform.position = Teleport.transform.position;    
+    }
+
+    public void MoonTravel()
+    {
+        SceneManager.LoadScene("Moon");
     }
 
    

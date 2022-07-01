@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cidades/CidadeCanion.unity
     guid: 172b283df31406d47aec20b419140005
+  - enabled: 1
+    path: Assets/Cidades/CidadeOutpost.unity
+    guid: 92f004b5e295c6945aaf52dc0978af87
+  - enabled: 1
+    path: Assets/Cidades/CidadeNaboo.unity
+    guid: cb8901a1e5945ed49993584dbd351905
+  - enabled: 1
+    path: Assets/Cidades/Imports/Lua/Moon.unity
+    guid: 7c5d72e50cf44f9428ca067994edab56
   m_configObjects: {}

@@ -12,6 +12,7 @@ public class PuloPlayer : MonoBehaviour
 	private bool isjumping;
 	private Rigidbody rb;
 	private float countDown;
+	public Animator anim;
 
 	
 	void Start()
@@ -42,6 +43,7 @@ public class PuloPlayer : MonoBehaviour
 			canjump = false;
 			isjumping = true;
 			rb.AddForce(0, jumpSpeed, 0, ForceMode.Impulse);
+			anim.SetTrigger("Jump");
 		}
 
 		Debug.Log("Pulou");
