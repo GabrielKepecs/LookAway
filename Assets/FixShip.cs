@@ -13,7 +13,7 @@ public class FixShip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        botaoLua.SetActive(false);
+        //botaoLua.SetActive(false);
     }
 
     // Update is called once per frame

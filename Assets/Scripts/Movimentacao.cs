@@ -7,7 +7,7 @@ public class Movimentacao : MonoBehaviour
     public FixedJoystick moveJoystick;
     private Rigidbody rdb;
     public GameObject currentCamera;
-    private float moveH, moveV, speedMove = 5;
+    private float moveH, moveV, speedMove = 10;
     float jumptime;
     public Animator anim;
     //public float jumpspeed = 8;
